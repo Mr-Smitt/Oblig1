@@ -1,22 +1,22 @@
 
 public class Oppgave1 {
-    public static int maks(int[]a) {
+    public static int ombyttinger(int[]a) {
+        int n=0;
         for (int i = 0; i+1 < a.length;) {
-            System.out.println(i);
             if (a[i] < a[i+1]) {
                 a[i] = a[i+1];
                 i = 0;
+                n++;
             } else {
-                i = i + 1;
+                i++;
             }
-            System.out.println(i);
+            System.out.println(n);
         }
-        return a[0];
+        return n;
     }
     public static void main(String[] args) {
-
         int[] a = {1, 2, 3, 4, 5};
-        int b=maks(a);
-        System.out.println(b);
+        int c=ombyttinger(a);
+        System.out.println(c);
     }
 }
