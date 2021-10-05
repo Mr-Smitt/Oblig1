@@ -5,30 +5,22 @@ public class Oppgave1 {
         if (a.length == 0) {
             throw new NoSuchElementException("Tabell kan ikke være tom");
         }
-        for (int i = 0; i+1 < a.length;) {
-            System.out.println(i);
-            if (a[i] < a[i+1]) {
-                a[i] = a[i+1];
-                i = 0;
-            } else {
-                i = i + 1;
+        for (int i = 0; i+1 < a.length; i++) {
+            if (a[i] > a[i+1]) {
+                a[i+1] = a[i];
             }
-            System.out.println(i);
         }
-        return a[0];
+        return a[a.length-1];
     }
     public static int ombyttinger(int[]a) {
         if (a.length == 0) {
             throw new NoSuchElementException("Tabell kan ikke være tom");
         }
         int n=0;
-        for (int i = 0; i+1 < a.length;) {
-            if (a[i] < a[i+1]) {
-                a[i] = a[i+1];
-                i = 0;
+        for (int i = 0; i+1 < a.length; i++) {
+            if (a[i] > a[i+1]) {
+                a[i+1] = a[i];
                 n++;
-            } else {
-                i++;
             }
             System.out.println(n);
         }
@@ -36,7 +28,7 @@ public class Oppgave1 {
     }
 
     public static void main(String[] args) {
-        int[] a = {};
+        int[] a = {5,4,3,2,1};
         int c=ombyttinger(a);
         System.out.println(c);
     }
