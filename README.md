@@ -10,7 +10,7 @@ På grunn av at denne varsjon av maks metoden kan ha felere unødvendige ombytti
 
 Oppgave2:
 Her lagde jeg metoden med å bruke en hjelpe variabel som igjennom hver gang en for og if fant et nytt tall i tabellen så økte det variabelen og så returnerte jeg variabelen.
-Jeg passet på at tabbelen var sortert med å gi en error hvis et nummer lengre inn i tabellen er større en et tidligere i tabellen.
+Jeg passet på at tabellen var sortert med å gi en error hvis et nummer lengre inn i tabellen er større en et nummer tidligere i tabellen.
 
 
 
