@@ -8,6 +8,9 @@ Nosuchelementexception var også lagt til på begge metoder for å passe på at 
 Jeg fant etter litt testing at metoden har flest ombyttinger når den største verdien er tidligere i tabellen, og færest når den var bakest i tabellen
 På grunn av at denne varsjon av maks metoden kan ha felere unødvendige ombyttinger rundt det å flytte verdier et hak om gangen så vil jeg si at den er litt være en flere andre lignende metoder.
 
+Oppgave2:
+Her lagde jeg metoden med å bruke en hjelpe variabel som igjennom hver gang en for og if fant et nytt tall i tabellen så økte det variabelen og så returnerte jeg variabelen.
+Jeg passet på at tabbelen var sortert med å gi en error hvis et nummer lengre inn i tabellen er større en et tidligere i tabellen.
 
 
 
