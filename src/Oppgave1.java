@@ -22,14 +22,7 @@ public class Oppgave1 {
                 a[i+1] = a[i];
                 n++;
             }
-            System.out.println(n);
         }
         return n;
-    }
-
-    public static void main(String[] args) {
-        int[] a = {5,4,3,2,1};
-        int c=ombyttinger(a);
-        System.out.println(c);
     }
 }
